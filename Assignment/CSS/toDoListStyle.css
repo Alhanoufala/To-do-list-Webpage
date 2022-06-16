@@ -1,0 +1,100 @@
+body{
+    background-color:#EFF7FA;
+}
+.containerAddTask{
+    width: 30%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    background-color: #E2EAEC;
+    border: 5px dotted  lightslategrey;;
+    border-radius: 15px ;
+    position: absolute;
+    left: 60%;
+    top: 20%;
+    padding: 30px 20px ;
+    font-size: 20px;
+    text-align: center;
+    color: lightslategrey;
+}
+
+.containerToDoList {
+    margin-top: 70px;
+    margin-left: 10%;
+    padding: 25px 10px ;
+    color: lightslategrey;
+}
+  
+
+
+.containerCompletedTasks{
+    margin-left: 10%;
+    padding: 25px 10px ;
+    color: lightslategrey;
+}
+.doneButton{
+   
+    margin-left: 10%;
+}
+.title1{
+    
+    margin-left: 6%; 
+    font-size: 35px; 
+}
+.title2{
+    
+    margin-left: 4%; 
+    font-size: 35px; 
+}
+
+ul{
+    list-style: none;
+}
+ul li {
+    width : 220px; 
+    border-radius: 10px ;
+    margin-bottom: 15px;
+    padding: 10px 5px;
+    text-align: center;
+     font-size: 15px;
+}
+.fixed-header, .fixed-footer{
+    width: 100%;
+    position: fixed;        
+  padding: 10px;
+}
+
+.fixed-header{
+  
+    top: 0;
+    background-color: #E2EAEC;
+}
+.fixed-footer{
+    bottom: 0;
+    text-align: center;
+} 
+.fixed-footer h2 {
+    font-size: 15px;
+    color: gray;
+}
+.fixed-footer h2 a {
+    text-decoration: none;
+    color: gray;
+}
+
+.logo{
+    height:  64px;
+    width: 64px;
+    margin-left: 10px;
+}
+.name{
+color:#979ca0;
+font-size: 30px;
+font-family: 'Times New Roman', Times, serif;
+
+}  
+#date{
+    position: absolute;
+    left: 5%;
+} 

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = "utf-8">
+        <title>Add Task</title> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src = "JavaScript/toDoList.js"> </script>
+        <link rel="stylesheet" href="CSS/toDoListStyle.css"> 
+    </head>
+    <body>
+      <div class = "fixed-header">
+          <img  class = "logo" alt="logo" src="../Assignment/images/logo.png"/><span class="name"> <strong>To Do</strong> </span>
+          
+      </div>
+
+        <div class ="containerAddTask">
+          
+        <h2>Add Task</h2>
+        <form action="#" method="post">
+        <p>Task Name:
+            <input id="taskName" name = "name" type="text"  maxlength="25" required >
+        </p>
+        <p>Category:
+            <select name = "category">
+                <option>Study</option>
+                <option>Sport</option>
+                <option>Home</option>
+            </select>
+
+        </p>
+        <p>Priority:
+            <label>High
+            <input id="high" name ="priority" type="radio" value="high" checked>
+            </label>
+            <label>Medium
+                <input id="medium" name ="priority" type="radio" value="medium">
+                </label>
+                <label>Low
+                    <input id="low" name ="priority" type="radio" value="low">
+                    </label>
+        </p>
+        <p>Deadline:
+            <input  id="deadline" name = "Deadline" type="date" required >
+
+        </p>
+        <p>
+            <input id ="submitButton" value = "Submit" type="button">
+            <input value = "Clear" type="reset">  
+        </p>
+        </form>
+        </div>
+
+        <div class="containerToDoList">
+            <h3 id = "date"></h3>
+            <h2 class="title1">To Do List</h2>
+            <ul id="ToDoList"> </ul>
+           <input  class= "doneButton" id= "doneButton" type="button" value="Done" >
+        </div>
+
+        <div class ="containerCompletedTasks">
+            <h2 class="title2">Completed Tasks</h2> 
+            <ul id ="CompletedTaskList"></ul>
+        </div>
+        <div class="fixed-footer">
+     
+            <h2><strong> Made by Alhanouf Alawwad &copy;</strong>
+                <br><a href="mailto:hano.alawwad@gmail.com">  
+                    Click here to contact me via Email
+                </a>
+            </h2>
+        </div>
+    </body>
+</html>
